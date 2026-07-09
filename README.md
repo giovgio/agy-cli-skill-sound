@@ -2,6 +2,8 @@
 
 A global plugin and skill for the Google Antigravity CLI (`agy`) that chimes when your agent needs input or approval on macOS.
 
+Offer me a coffee if this skill is useful for you: https://buymeacoffee.com/theunfollower
+
 ## How it Works
 Audible Glass chime notifies you when:
 * An execution turn completes and agy is waiting for your next text input (`Stop`).
