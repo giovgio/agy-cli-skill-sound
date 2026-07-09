@@ -1,0 +1,6 @@
+{
+  "name": "play-sound",
+  "version": "1.0.0",
+  "description": "Emits sound notifications when agy finishes a turn or requires approval.",
+  "author": "giorgiolonardo"
+}
