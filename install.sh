@@ -21,7 +21,9 @@ mkdir -p "$SKILL_DIR"
 # Copy files
 cp "$SCRIPT_DIR/plugin.json" "$PLUGIN_DIR/"
 cp "$SCRIPT_DIR/scripts/play-sound.sh" "$PLUGIN_DIR/scripts/"
+cp "$SCRIPT_DIR/scripts/check_sound.py" "$PLUGIN_DIR/scripts/"
 chmod +x "$PLUGIN_DIR/scripts/play-sound.sh"
+chmod +x "$PLUGIN_DIR/scripts/check_sound.py"
 
 cp "$SCRIPT_DIR/skills/play-sound/SKILL.md" "$SKILL_DIR/"
 

@@ -4,9 +4,10 @@
 EVENT_TYPE="${1:-default}"
 SOUND_FILE="/System/Library/Sounds/Glass.aiff"
 
-# Print log message for debugging (redirected or silent in normal operation)
-# echo "agy event: $EVENT_TYPE. Playing notification sound..."
-
-if [ -f "$SOUND_FILE" ]; then
-  /usr/bin/afplay "$SOUND_FILE" >/dev/null 2>&1 &
+# Call check_sound.py to decide if we should play the sound
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if python3 "$SCRIPT_DIR/check_sound.py" "$EVENT_TYPE"; then
+  if [ -f "$SOUND_FILE" ]; then
+    /usr/bin/afplay "$SOUND_FILE" >/dev/null 2>&1 &
+  fi
 fi

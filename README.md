@@ -20,3 +20,8 @@ Audible Glass chime notifies you when:
 ## Configuration & Customization
 To change the sound file:
 Edit the script at `~/.gemini/config/plugins/play-sound/scripts/play-sound.sh` and point `SOUND_FILE` to any custom audio path (e.g. `/System/Library/Sounds/Ping.aiff` or `/System/Library/Sounds/Submarine.aiff`).
+
+## Support
+
+If this skill is useful for you, feel free to buy me a coffee!
+[Buy Me a Coffee ☕](https://buymeacoffee.com/mrtobor)
