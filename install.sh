@@ -3,6 +3,11 @@
 
 set -e
 
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  echo "Error: play-sound is only supported on macOS." >&2
+  exit 1
+fi
+
 PLUGIN_DIR="$HOME/.gemini/config/plugins/play-sound"
 SKILL_DIR="$HOME/.gemini/config/skills/play-sound"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
