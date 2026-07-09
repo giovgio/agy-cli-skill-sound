@@ -1,0 +1,25 @@
+{
+  "play-sound-turn-complete": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "HOOK_PLAY_COMMAND complete",
+        "timeout": 5
+      }
+    ]
+  },
+  "play-sound-approval-needed": {
+    "PreToolUse": [
+      {
+        "matcher": "run_command|ask_permission|ask_question",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "HOOK_PLAY_COMMAND approval",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
