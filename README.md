@@ -1,4 +1,4 @@
-# Antigravity CLI Sound Notifications (`play-sound`)
+# Antigravity CLI Sound Notifications
 
 A global plugin and skill for the Google Antigravity CLI (`agy`) that chimes when your agent needs input or approval on macOS.
 
